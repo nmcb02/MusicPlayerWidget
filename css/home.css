@@ -1,7 +1,20 @@
-body {
-    background-color: lavender;
+@font-face {
+    font-family: 'MagicRetro';
+    src: url(../fonts/magic_retro.ttf);
+}
+
+@font-face {
+    font-family: 'MilkyVintage';
+    src: url(../fonts/MilkyVintage-Regular.ttf);
 }
 
 h1 {
-    font-family: 'Courier New';
+    font-family: 'MagicRetro';
+    font-size: x-large;
+}
+
+body {
+    background-color: lavender;
+    font-family: 'MilkyVintage';
+    font-size: large;
 }
