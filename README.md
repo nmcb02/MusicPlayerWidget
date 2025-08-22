@@ -1,2 +1,3 @@
 # MusicPlayerWidget
-Widget for playing music
+Widget for playing your local PC music.
+
