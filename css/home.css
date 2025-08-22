@@ -23,15 +23,24 @@ header{
 }
 
 div {
-    font-family: 'MilkyVintage';
-    font-size: large;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    flex-direction: column; /* Stacks the items within div vertically*/
+    align-items: center; /* centers it horizontally */
+    font-family: 'MilkyVintage';
     color: rgb(122, 122, 255);
+    gap: 0.5rem;
+}
+
+p {
+    font-size: 24px;
 }
 
 .startBtn {
-    font-family: 'MilkyVintage';
+
+}
+
+.startBtn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
