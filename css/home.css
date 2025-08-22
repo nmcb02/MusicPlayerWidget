@@ -8,13 +8,30 @@
     src: url(../fonts/MilkyVintage-Regular.ttf);
 }
 
-h1 {
-    font-family: 'MagicRetro';
-    font-size: x-large;
-}
-
 body {
     background-color: lavender;
+}
+
+header{
+    margin-top: 60px;
+    font-family: 'MagicRetro';
+    font-size: 28px;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color:rgb(80, 80, 255);
+}
+
+div {
     font-family: 'MilkyVintage';
     font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: rgb(122, 122, 255);
+}
+
+.startBtn {
+    font-family: 'MilkyVintage';
 }
