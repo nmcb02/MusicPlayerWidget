@@ -2,22 +2,33 @@
 <html>
     <head>
         <title>Music Player</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/home.css">
     </head>
     <body>
-        <article>
-            <header>
-                <h1>Music <br> Player</h1>
-            </header>
-            <div>
-                <p>Select a theme:</p>
-                <select>
-                    <option value="lo-fi">Lo-fi</option>
-                    <option value="ost">OST</option>
-                    <option value="custom">Custom</option>
-                </select> <br/>
-                <button id="startButton">Start</button>
-            </div>
-        </article>
+        <header>
+            <h1>Music <br> Player</h1>
+        </header>
+        <div>
+            <p>Select a theme:</p>
+            <select name="themes" id="themes">
+                <optgroup label="Lo-fi">
+                    <option value="studyLofi">Study</option>
+                </optgroup>
+                <optgroup label="OST">
+                    <option value="FFV">Final Fantasy V</option>
+                    <option value="FFVI">Final Fantasy VI</option>
+                    <option value="FFVII">Final Fantasy VII</option>
+                    <option value="FFVIIRebirth">Final Fantasy VII
+                        Rebirth</option>
+                    <option value="FFVIIRemake">Final Fantasy VII
+                        Remake</option>
+                    <option value="FFXV">Final Fantasy XV</option>
+                </optgroup>
+                <optgroup label="Custom">
+                    <option value="folder">Add folder...</option>
+                </optgroup>
+            </select> <br />
+            <button id="startButton">Start</button>
+        </div>
     </body>
 </html>
