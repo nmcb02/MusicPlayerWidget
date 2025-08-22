@@ -22,7 +22,7 @@ header{
     color:rgb(80, 80, 255);
 }
 
-div {
+.themeChooserContainer {
     display: flex;
     flex-direction: column; /* Stacks the items within div vertically*/
     align-items: center; /* centers it horizontally */
