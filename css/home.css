@@ -1,7 +1,46 @@
+@font-face {
+    font-family: 'MagicRetro';
+    src: url(../fonts/magic_retro.ttf);
+}
+
+@font-face {
+    font-family: 'MilkyVintage';
+    src: url(../fonts/MilkyVintage-Regular.ttf);
+}
+
 body {
     background-color: lavender;
 }
 
-h1 {
-    font-family: 'Courier New';
+header{
+    margin-top: 60px;
+    font-family: 'MagicRetro';
+    font-size: 28px;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color:rgb(80, 80, 255);
+}
+
+div {
+    display: flex;
+    flex-direction: column; /* Stacks the items within div vertically*/
+    align-items: center; /* centers it horizontally */
+    font-family: 'MilkyVintage';
+    color: rgb(122, 122, 255);
+    gap: 0.5rem;
+}
+
+p {
+    font-size: 24px;
+}
+
+.startBtn {
+
+}
+
+.startBtn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
