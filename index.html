@@ -2,12 +2,19 @@
 <html>
     <head>
         <title>Music Player</title>
-        <link rel="stylesheet" href="css/home.css">
+        <!-- <link rel="stylesheet" href="css/home.css"> -->
     </head>
     <body>
+        <div class="navigationBar">
+            <a href="pages/settingsPage.html">
+                <button type="button" id="settingsBtn">settings</button>
+            </a>
+        </div>
+
         <header>
             <h1>* Music *<br> Player</h1>
         </header>
+
         <div class="themeChooserContainer">
             <p>Select a theme:</p>
             <select name="themes" id="themes">
@@ -18,9 +25,9 @@
                     <option value="FFV">Final Fantasy V</option>
                     <option value="FFVI">Final Fantasy VI</option>
                     <option value="FFVII">Final Fantasy VII</option>
-                    <option value="FFVIIRebirth">Final Fantasy VII
+                    <option value="FFVII">Final Fantasy VII
                         Rebirth</option>
-                    <option value="FFVIIRemake">Final Fantasy VII
+                    <option value="FFVII">Final Fantasy VII
                         Remake</option>
                     <option value="FFXV">Final Fantasy XV</option>
                 </optgroup>
