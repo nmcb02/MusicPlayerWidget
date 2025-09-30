@@ -21,7 +21,7 @@ function startButtonClicked() {
     if (selectedTheme == "FFVII") {
         // alert("FFVII selected")
         pageLink = "../pages/FFVIIPage.html"
-        window.location.href(pageLink);
+        window.location.href = pageLink;
     }
     if (selectedTheme == "FFXV") {
         alert("FFXV selected")
