@@ -1,12 +1,10 @@
 document.getElementById("startBtn").addEventListener('click', startButtonClicked);
 
 function startButtonClicked() {
-    var selectedTheme = document.getElementById("themes").value;
+    var selectedTheme = document.getElementById("themes").value.trim();
 
     switch (selectedTheme) {
         case "studyLofi":
-            break;
-        case "FFVII":
             break;
         case "FFVII":
             window.location.href = "../MusicPlayerWidget/pages/FFVIIPage.html";
@@ -17,6 +15,5 @@ function startButtonClicked() {
             break;
         default:
             window.location.href = "../MusicPlayerWidget/index.html";
-
     }
 }
