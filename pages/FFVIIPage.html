@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Final Fantasy VII OST</h1>
+        <title>Final Fantasy VII OST</title>
     </head>
     <body>
-        <div class="navigationBar">
-            This is some text.
-            <a href="../index.html">
-                <button type="button">back</button>
-            </a>
-            <a href="settingsPage.html">
-                <button type="button">settings</button>
-            </a>
-        </div>
+        <header class="navigationBar">
+            <button onclick="window.location.href='../index.html'">Back</button>
+            <button
+                onclick="window.location.href='settingsPage.html'">Settings</button>
+        </header>
+        <main>
+            <section class="albumPicture">
+                <img src="../images/ffchip.png"
+                    alt="Final Fantasy 7 album cover">
+            </section>
+            <section class="musicProgress">
+                <progress id="progressBar" value="0" max="100"></progress>
+            </section>
+            <section class="musicControl">
+                <button id="prevSong">⏮</button>
+                <button id="playSong">▶</button>
+                <button id="nextSong">⏭</button>
+            </section>
+        </main>
     </body>
 </html>
