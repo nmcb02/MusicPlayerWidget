@@ -4,12 +4,11 @@ function startButtonClicked() {
     var selectedTheme = document.getElementById("themes").value.trim();
 
     switch (selectedTheme) {
-        case "studyLofi":
+        case "Amethyst":
+            window.location.href = "../MusicPlayerWidget/pages/studyLofi.html";
             break;
         case "FFVII":
             window.location.href = "../MusicPlayerWidget/pages/FFVIIPage.html";
-            break;
-        case "FFXV":
             break;
         case "folder":
             break;
