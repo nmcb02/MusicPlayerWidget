@@ -3,6 +3,9 @@
 *.m4a
 *.wav
 
+#image folder
+images/
+
 # Node modules
 node_modules/
 
