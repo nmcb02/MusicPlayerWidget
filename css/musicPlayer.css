@@ -12,7 +12,7 @@ body {
 
 .navigationBar button {
     font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 11px;
     padding: 8px 16px;
     margin: 0 10px;
     background-color:   rgb(34, 97, 83);
@@ -20,6 +20,9 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+
 }
 .navigationBar button:hover {
     background-color: rgb(50, 140, 120);
@@ -88,6 +91,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .musicControls button:hover {
