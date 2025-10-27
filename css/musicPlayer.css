@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(10, 37, 31);
+}
+
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navigationBar button {
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    background-color:   rgb(34, 97, 83);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+
+}
+.navigationBar button:hover {
+    background-color: rgb(50, 140, 120);
+}
+
+.albumPictureBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.albumPicture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.musicProgress {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#progressBar {
+    width: 80%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(34, 97, 83);
+}
+
+#progressBar::-webkit-progress-bar {
+    background-color: rgb(34, 97, 83);
+    border-radius: 20px;
+}
+
+#progressBar::-webkit-progress-value {
+    background-color: rgb(50, 140, 120);
+    border-radius: 20px;
+}
+
+.songInformation {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+}
+
+.musicControls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.musicControls button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: rgb(34, 97, 83);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.musicControls button:hover {
+    background-color: rgb(50, 140, 120);
+}
+
+.musicControls button:active {
+    transform: scale(0.95);
+}

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Lofi music</title>
+        <link rel="stylesheet" href="../css/musicPlayer.css">
     </head>
     <body>
         <header class="navigationBar">
@@ -10,14 +11,20 @@
                 onclick="window.location.href='settingsPage.html'">Settings</button>
         </header>
         <main>
-            <section class="albumPicture">
-                <img src="../images/空が青を失ってる.png"
-                    alt="Lofi album cover">
+            <section class="albumPictureBox">
+                <div class="albumPicture">
+                    <img src="../images/空が青を失ってる.png"
+                        alt="Lofi album cover">
+                </div>
+            </section>
+            <section class="songInformation">
+                <h2>song</h2>
+                <h3>artist - album</h3>
             </section>
             <section class="musicProgress">
                 <progress id="progressBar" value="0" max="100"></progress>
             </section>
-            <section class="musicControl">
+            <section class="musicControls">
                 <button id="prevSong">⏮</button>
                 <button id="playSong">▶</button>
                 <button id="nextSong">⏭</button>
