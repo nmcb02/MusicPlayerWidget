@@ -11,23 +11,28 @@
                 onclick="window.location.href='settingsPage.html'">Settings</button>
         </header>
         <main>
-            <section class="albumPictureBox">
-                <div class="albumPicture">
-                    <img src="../images/ffchip.png"
-                        alt="Final Fantasy 7 album cover">
+            <section class="audioPlayer">
+                <div class="albumPictureBox">
+                    <div class="albumPicture">
+                        <img src="../assets/ffchip.png"
+                            alt="Final Fantasy 7 album cover">
+                    </div>
                 </div>
-            </section>
-            <section class="songInformation">
-                <h2 id="songName">Song</h2>
-                <h3 id="artistName">Artist</h3>
-            </section>
-            <section class="musicProgress">
-                <progress id="progressBar" value="0" max="100"></progress>
-            </section>
-            <section class="musicControls">
-                <button id="prevSong">⏮</button>
-                <button id="playSong">▶</button>
-                <button id="nextSong">⏭</button>
+                <div class="songInformation">
+                    <h2 id="songName">Song</h2>
+                    <h3 id="artistName">Artist</h3>
+                </div>
+
+                <audio controls id="audioPlayer"
+                    src="../audio/FFVII-Chiptune/01 闘う者たち ～ ファンファーレ.m4a">
+                </audio>
+                <input type="range" id="progressBar" value="0" max="100">
+
+                <div class="musicControls">
+                    <button id="prevSong">⏮</button>
+                    <button id="playSong">▶</button>
+                    <button id="nextSong">⏭</button>
+                </div>
             </section>
         </main>
     </body>
