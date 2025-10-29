@@ -23,17 +23,23 @@
                     <h3 id="artistName">Artist</h3>
                 </div>
 
-                <audio controls id="audioPlayer"
+                <audio id="song"
                     src="../audio/FFVII-Chiptune/01 闘う者たち ～ ファンファーレ.m4a">
                 </audio>
-                <input type="range" id="progressBar" value="0" max="100">
+
+                <div class="progressBarBox">
+                    <input type="range" id="progressBar" value="0" max="100">
+                </div>
 
                 <div class="musicControls">
-                    <button id="prevSong">⏮</button>
-                    <button id="playSong">▶</button>
-                    <button id="nextSong">⏭</button>
+                    <button onclick="previousSong()" id="prevSong">⏮</button>
+                    <button onclick="playPause()" id="playSong">▶</button>
+                    <button onclick="nextSong()" id="nextSong">⏭</button>
                 </div>
             </section>
         </main>
+
+        <script src="../scripts/musicPlayerControls.js"></script>
+
     </body>
 </html>

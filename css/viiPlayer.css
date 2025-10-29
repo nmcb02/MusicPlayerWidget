@@ -43,6 +43,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.progressBarBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 #progressBar {
     -webkit-appearance: none;
     width: 80%;
@@ -61,15 +68,6 @@ body {
     border-radius: 50%;
     border: solid 2px white;
     cursor: pointer;
-}
-#progressBar::-webkit-progress-bar {
-    background-color: rgb(34, 97, 83);
-    border-radius: 20px;
-}
-
-#progressBar::-webkit-progress-value {
-    background-color: rgb(50, 140, 120);
-    border-radius: 20px;
 }
 
 .songInformation {
