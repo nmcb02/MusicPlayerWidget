@@ -48,6 +48,16 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.progressBarBox span {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    margin: 0 10px;
+    margin-top: 10px;
 }
 
 #progressBar {

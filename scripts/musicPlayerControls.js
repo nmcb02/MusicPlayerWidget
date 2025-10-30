@@ -2,12 +2,26 @@ let progress = document.getElementById('progressBar');
 let song = document.getElementById('song');
 let playButton = document.getElementById('playSong');
 let totalTime = document.getElementById('totalTime');
+let currentTimeEl = document.getElementById('currentTime');
 
+function formatTime(sec) {
+    const minutes = Math.floor(sec / 60);
+    const seconds = Math.floor(sec % 60).toString().padStart(2, "0");
+    return `${minutes}:${seconds}`;
+}
 
 song.addEventListener('loadedmetadata', () => {
     progress.max = song.duration; // duration in seconds
     progress.value = song.currentTime;
+    totalTime.textContent = formatTime(song.duration);
 });
+
+// update both slider + current time as song plays
+song.addEventListener('timeupdate', () => {
+    progress.value = song.currentTime;
+    currentTimeEl.textContent = formatTime(song.currentTime);
+});
+
 
 function playPause() {
     if (song.paused) {
