@@ -16,3 +16,16 @@ function startButtonClicked() {
             window.location.href = "../MusicPlayerWidget/index.html";
     }
 }
+
+function App() {
+    return (
+        <>
+        NAVIGATION BAR HERE
+        TITLE AND LOGO HERE
+        THEME SELECTION HERE
+        START BUTTON HERE
+        </>
+    );
+}
+
+export default App;

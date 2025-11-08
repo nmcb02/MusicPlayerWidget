@@ -2,20 +2,15 @@
 <html>
     <head>
         <title>Music Player</title>
-        <link rel="stylesheet" href="css/home.css">
+        <!-- <link rel="stylesheet" href="css/home.css"> -->
     </head>
     <body>
-        <div class="navigationBar">
-            <a href="pages/settingsPage.html">
-                <button type="button" id="settingsBtn">settings</button>
-            </a>
-        </div>
 
         <header>
             <h1>* Music *<br> Player</h1>
         </header>
 
-        <div class="themeChooserContainer">
+        <!-- <div class="themeChooserContainer">
             <p>Select a theme:</p>
             <select name="themes" id="themes">
                 <optgroup label="Lo-fi">
@@ -30,7 +25,9 @@
             </select> <br />
             <img src="assets/btn_start_idle_v2.png" alt="Start" id="startBtn"
                 class="startBtn">
-        </div>
-        <script src="scripts/homepage.js"></script>
+        </div> -->
+        <!-- <script src="scripts/homepage.js"></script> -->
+        <div id="root"></div>
+        <script type="module" src="/src/index.jsx"></script>
     </body>
 </html>
