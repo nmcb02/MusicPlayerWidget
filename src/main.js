@@ -1,6 +1,9 @@
+const indexPath = require('path').join(__dirname, '../index.html');
+const srcPath = require('path').join(__dirname, './');
+
 const { app, BrowserWindow } = require('electron');
 require('electron-reload')('.', {
-  watch: ['index.html', 'css', 'scripts']
+  watch: [indexPath, srcPath]
 });
 
 function createWindow() {
@@ -14,7 +17,7 @@ function createWindow() {
     }
   });
 
-  win.loadFile('index.html');
+  win.loadFile(indexPath);
 }
 
 app.whenReady().then(createWindow);
