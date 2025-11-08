@@ -1,11 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'MagicRetro';
-    src: url(../fonts/magic_retro.ttf);
+    src: url(./assets/fonts/magic_retro.ttf);
 }
 
 @font-face {
     font-family: 'MilkyVintage';
-    src: url(../fonts/MilkyVintage-Regular.ttf);
+    src: url(./assets/fonts/MilkyVintage-Regular.ttf);
 }
 
 body {
@@ -24,8 +24,8 @@ header{
 
 .themeChooserContainer {
     display: flex;
-    flex-direction: column; /* Stacks the items within div vertically*/
-    align-items: center; /* centers it horizontally */
+    flex-direction: column; 
+    align-items: center; 
     font-family: 'MilkyVintage';
     color: rgb(122, 122, 255);
     gap: 0.5rem;
@@ -43,4 +43,4 @@ p {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.2s ease;
-}
+} */
